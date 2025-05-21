@@ -56,19 +56,3 @@ button:hover {
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
     font-weight: bold;
 }
-
-/* Para o placar (Score e Lives), como não há um elemento HTML direto no seu CSS atual,
-   assumo que você o desenha no canvas ou tem elementos separados que não foram fornecidos.
-   Se tiver elementos HTML para o placar, adicionei uma sugestão de estilo abaixo: */
-
-/* Exemplo de estilo para elementos de placar (se existirem como HTML separado) */
-.score-display, .lives-display {
-    color: #FFFFFF; /* Texto branco puro para o placar */
-    font-size: 24px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhor legibilidade */
-}
-
-.lives-display {
-    color: #FF4136; /* Vermelho vibrante para as vidas */
-}
