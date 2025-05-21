@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* Usando uma fonte mais moderna e legível como "Roboto" ou "Open Sans" */
+    font-family: 'Roboto', sans-serif; /* Você precisará importar esta fonte do Google Fonts, por exemplo */
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Aumentado o gap para mais espaçamento entre os elementos */
+    
+    /* Fundo: Gradiente radial suave com tons de azul e roxo mais profundos */
+    background: radial-gradient(circle at center, #2C3E50 0%, #1A1A2E 100%) no-repeat;
+    background-size: cover; /* Garante que o gradiente cubra toda a área */
+}
+
+canvas {
+    /* Área de Jogo: Cinza claro e quente, quase um bege acinzentado */
+    background-color: #E8E8E0; /* Branco lavado ou cinza claro com toque de bege */
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #607D8B; /* Borda sutilmente mais escura para definir a área (azul acinzentado) */
+    border-radius: 8px; /* Aumentado o border-radius para um visual mais suave */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave para profundidade */
+}
+
+/* Não podemos controlar as cores dos blocos ou da bola diretamente via CSS do canvas,
+   pois eles são desenhados programaticamente no JavaScript.
+   As cores dos blocos e da bola serão definidas no código JavaScript do jogo. */
+
+button {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 12px 25px; /* Aumentado o padding para um botão mais substancial */
+    font-size: 22px; /* Aumentado o tamanho da fonte do botão */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; /* Transição mais suave */
+    cursor: pointer; /* Indica que é clicável */
+
+    /* Botão "Inicie o Jogo": Verde esmeralda com leve sombreamento */
+    background: linear-gradient(135deg, #2ECC71 0%, #28B463 100%); /* Gradiente de verde esmeralda */
+    color: #FFFFFF; /* Texto do botão em branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    text-transform: uppercase; /* Deixa o texto em maiúsculas para um visual mais moderno */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05); /* Efeito de elevação e leve escala no hover */
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+    font-weight: bold;
+}
+
+/* Para o placar (Score e Lives), como não há um elemento HTML direto no seu CSS atual,
+   assumo que você o desenha no canvas ou tem elementos separados que não foram fornecidos.
+   Se tiver elementos HTML para o placar, adicionei uma sugestão de estilo abaixo: */
+
+/* Exemplo de estilo para elementos de placar (se existirem como HTML separado) */
+.score-display, .lives-display {
+    color: #FFFFFF; /* Texto branco puro para o placar */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhor legibilidade */
+}
+
+.lives-display {
+    color: #FF4136; /* Vermelho vibrante para as vidas */
+}
