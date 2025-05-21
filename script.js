@@ -93,7 +93,7 @@ let score = 0;
 function drawScore() {
     render.font = "20px Roboto";
     render.fillStyle = scoreColor;
-    render.fillText(`Score: ${score}`, 9, 20);
+    render.fillText(`Pontos: ${score}`, 9, 20);
 }
 
 // Vidas
@@ -101,7 +101,7 @@ let lives = 3;
 function drawLives() {
     render.font = "20px Roboto";
     render.fillStyle = livesColor;
-    render.fillText(`Lives: ${lives}`, canvas.width - 75, 20);
+    render.fillText(`Vidas: ${lives}`, canvas.width - 75, 20);
 }
 
 function draw() {
